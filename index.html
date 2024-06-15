@@ -1,752 +1,899 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahubzada Protfolio.......</title>
-     
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Safs - HTML</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="hel.css">
+    <!-- ====== ALL CSS ====== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar-nav">
     
-<!-- header section starts      -->
-
-<header>
-
-
-
-    <nav class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#dishes">Services</a>
-        <a href="#review">Customers Reviews</a>
-        <a href="#order">Contact Us</a>
-        <a href="#about">About Us</a>
-    </nav>
-
-    <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
     </div>
+    <!-- // Preloader -->
+    
 
-</header>
+    <!-- ====== Header ====== -->
+    <header id="header" class="header">
+        <!-- ====== Navbar ====== -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">
+                    <i style="font-size: 3rem;" class="fa fa-code"></i>  <!-- <img src="assets/images/logo.png" alt="logo"> -->
+                </a>
+                <!-- // Logo -->
 
-<!-- header section ends-->
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span><i class="fa fa-bars"></i></span></button>
+                <!-- Mobile Menu -->
 
-<!-- search form  -->
-
-<form action="" id="search-form">
-    <input type="search" placeholder="search here..." name="" id="search-box">
-    <label for="search-box" class="fas fa-search"></label>
-    <i class="fas fa-times" id="close"></i>
-</form>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="swiper-container home-slider">
-
-        <div class="swiper-wrapper wrapper">
-
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Let Me Introduce Myself</span>
-                    <h3>Sahibzada Shadab Khan</h3>
-                    <p>Hello Guys <br> I am <b><i>Sahibazada Shadab
-                        Khan</i></b> I have done BS computer scince from university of malakend along with
-                        my education.I have done one year <b>DIT from khyber pakhtunkhwa board of technical education peshawer</b>.
-                        For the purpose of elevation my communication skills i have done <b>six month english language</b> from insititute of 
-                       professional skills chakdara.As a programmer i recieved <i>National Freelance Certificate</i> from university of malakend.I am 
-                       here to provide all technical services you can get the given services...<br><a href="#dishes">Click me to show services </a> <br>Thanks for coneccting..... </p>
-              
-                    <a href="#" class="btn">order now</a>
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">SERVICE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li> -->
+                        <li class="nav-item"><a class="nav-link pr0" href="#contact">CONTACT</a></li>
+                    </ul>
                 </div>
-                <div class="image">
-                    <img src="pic-5.jpg" alt="">
+            </div>
+        </nav>
+        <!-- ====== // Navbar ====== -->
+    </header>
+    <!-- ====== // Header ====== -->
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home">
+        <!-- Hero Area Content -->
+        <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h4 class="text-uppercase">Let's Begin With  <h3>Sahibazada Shadab Khan</h3></h4>
+                        <h3 class="text-uppercase"><span class="typed"></span></h3>
+                        <p>Convert Dreams To Reality.</p>
+                        <a href="https://wa.me/923444872630" class="button smooth-scroll">Drop Message</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="swiper-pagination"></div>
-
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/img-1.png)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/img-2.png)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
     </div>
+    <!-- ====== //Hero Area ====== -->
 
-</section>
-
-<!-- home section ends -->
-
-<!-- dishes section starts  -->
-
-<section class="dishes" id="dishes">
-
-    <h3 class="sub-heading"> Our Services </h3>
-    <h1 class="heading"> Popular Services</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="images/webe.png" alt="" srcset="">
-            <h3>Website-Development</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$15.99</span>
-            <a href="#order" class="btn">Order Now</a>
-        </div>
-
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="images/Android.png" alt="">
-            <h3>Android-Development</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$15.99</span>
-            <a href="#order" class="btn">Order Now</a>
-        </div>
-
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="images/content.jpeg" alt="">
-            <h3>Content Writing</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$6</span>
-            <a href="#order" class="btn">Order Now</a>
-        </div>
-
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="images/Msoffice.png" alt="">
-            <h3>MS Office</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$5</span>
-            <a href="#order" class="btn">Order Now</a>
-        </div>
-
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="images/thumbnail.jpeg" alt="">
-            <h3>Social Media Thumbnails</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$4.66</span>
-            <a href="#order" class="btn">Order Now</a>
-        </div>
-
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="images/poster.png" alt="" srcset="">
-            <h3>Poster Designing</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$15.99</span>
-            <a href="#order" class="btn">add to cart</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- dishes section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <h3 class="sub-heading"> about us </h3>
-    <h1 class="heading"> why choose us? </h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src="images/webup.png" alt="">
-        </div>
-
-        <div class="content">
-            <h3>Best Services And Quick Action</h3>
-            <p>It is our responsibility to take action on any project we are here to serve our customers with loyalty..</p>
-            <p>Successfull people always think that what thay have loser always think what thay missing<br>Build With Us</p>
-            <div class="icons-container">
-                <div class="icons">
-                    <i class="fas fa-shipping-fast"></i>
-                    <span>Punctuality</span>
-                </div>
-                <div class="icons">
-                    <i class="fas fa-dollar-sign"></i>
-                    <span>Loyal And Honest</span>
-                </div>
-                <div class="icons">
-                    <i class="fas fa-headset"></i>
-                    <span>24/7 Service</span>
-                </div>
-            </div>
-            <a href="#footer" class="btn">learn more</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- menu section starts  -->
-
-<section class="menu" id="menu">
-
-    <h3 class="sub-heading"> Our Previous Projects </h3>
-    <h1 class="heading"> Build With Us </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="images/webe.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Educational Website</h3>
-                <p>We can Create a educational website throuth which you can communicate....</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$15.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/pic-6.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>E-Commerce Projects</h3>
-                <p>We can Create a E-commerce website throuth which you can deal with customers....</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$15.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/Android.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Android Apps</h3>
-                <p>We are here to provide an app Development services.....</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$12.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/webtoapp.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Website to app conversion</h3>
-                <p>We can convert you website to mobile application</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$10.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/videoediting.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Video Editting</h3>
-                <p>We will are providing the video Editting it may be educational or family vlogs..</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$6.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/photo Editing.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Photo Editting</h3>
-                <p>We will are providing the video Editting it may be educational or family vlogs..</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$4.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/thumbnail.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Thumbnails Designing</h3>
-                <p>We will design Thumbnails for  any social media platform....</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$3.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/card.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Cards Designing</h3>
-                <p>We will design Cards,flax according to customers requirement....</p>
-                <a href="#order" class="btn">Favorite</a>
-                <span class="price">$4.99</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/presentation.jpeg" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Presentation Designing</h3>
-                <p>We will provide effective Presentation for Office meeting....</p>
-                <a href="#order" class="btn">add to cart</a>
-                <span class="price">$6.99</pan>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- menu section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h3 class="sub-heading"> Customer's review </h3>
-    <h1 class="heading"> What They Say </h1>
-
-    <div class="swiper-container review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-1.png" alt="">
-                    <div class="user-info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+    <!-- ====== Featured Area ====== -->
+    <section id="featured" class="section-padding pb-70">
+        <div class="container">
+            <div class="row">
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Graphic Design</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatibus, sunt. Recusandae ab aliquid voluptate exercitationem dicta ipsa, odio cumque sapiente quaerat nisi ad rem dolor iusto.</p>
                         </div>
                     </div>
                 </div>
-                <p>Great you done my project very well that is awsome to work with you keep it up serve clints width loyalty.thanks</p>
-            </div>
-
-           
-
-        </div>
-
-    </div>
-    
-</section>
-
-<!-- review section ends -->
-
-<!-- order section starts  -->
-
-<section class="order" id="order">
-
-    <h3 class="sub-heading"> Order now </h3>
-    <h1 class="heading"> Efficient and fast </h1>
-
-    <form onsubmit="sendemail(); reset(); return false;">
-
-        <div class="inputBox">
-            <div class="input">
-                <span>Your Name</span>
-                <input id="name" type="text" placeholder="enter your name" required>
-            </div>
-            <div class="input">
-                <span>Email Address</span>
-                <input id="email" type="email" placeholder="enter your email" required>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Web Design</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatibus, sunt. Recusandae ab aliquid voluptate exercitationem dicta ipsa, odio cumque sapiente quaerat nisi ad rem dolor iusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">SEO Services</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatibus, sunt. Recusandae ab aliquid voluptate exercitationem dicta ipsa, odio cumque sapiente quaerat nisi ad rem dolor iusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
             </div>
         </div>
-        <div class="inputBox">
-            <div class="input">
-                <span>Order Name</span>
-                <input id="project" type="text" placeholder="enter order name(Web-Development,app-development etc..)"required>
+    </section>
+    <!-- ====== //Featured Area ====== -->
+
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>About Me</h2>
+                        <p>Sahibzada Shadab Full Stack Website Developer With HTML,CSS,JAVAScript,Bootstrap,Reactjs PHP And Laravel</p>
+                    </div>
+                </div>
             </div>
-            <div class="input">
-                <span>Required Days</span>
-                <input id="days" type="number" placeholder="Project Completion time cost depend on time"required>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/about-bg.png)">
+                        <!-- Social Link -->
+                        <div class="social-aria">
+                            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <!-- // Social Link -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Hello, I am <span>Sahibzada Shadab Khan</span></h2>
+                        <h4>Web Developer and Graphic Designer</h4>
+                        <p>My name is Shadab Khan. I hold a Bachelor's degree in Computer Science from the University of Malakand. Additionally, I have completed a one-year Diploma in Information Technology (DIT) from the Peshawar Technical Board of Education and a seven-month English language course to enhance my proficiency in English.
+
+                            I have been working as a web developer for the past two years. During this time, I gained seven months of experience at Code Solution, a small company. Notably, I was the top performer in my batch at university.
+                            
+                            Besides web development, I have skills in graphic design. I can create cards, banners, flex designs, etc using Canva and Figma.</p>
+
+                        <h5>My Skills</h5>
+
+                        <!-- Skill Area -->
+                        <div id="skills" class="skill-area">
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>HTML CSS</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>JS</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span>Reactjs</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+                            </div> <div class="single-skill">
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>Bootstrap</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+                            </div> <div class="single-skill">
+                                <div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>PHP</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+                            </div>  <div class="single-skill">
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>Laravel</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                            </div> <div class="single-skill">
+                                <div class="skillbar" data-percent="55%">
+                                    <div class="skillbar-title"><span>Python</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">55%</div>
+                                </div>
+                            </div> <div class="single-skill">
+                                <div class="skillbar" data-percent="75%">
+                                    <div class="skillbar-title"><span>Designing</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">75%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                        </div>
+                        <!-- //Skill Area -->
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="inputBox">
-             <div class="input">
-                <span>date and time</span>
-                <input id="date" type="datetime-local"required>
+    </section>
+    <!-- ====== // About Area ====== -->
+
+
+    <!-- ====== Fact Counter Section ====== -->
+    <!-- ====================================================================
+            NOTE: You need to change  'data-count="10"' and 'p' Eliments 
+        ===================================================================== -->
+    <section class="section-padding pb-70 bg-img fact-counter" id="counter" style="background-image: url(assets/images/fan-fact-bg.jpg)">
+        <div class="container">
+            <div class="row">
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 co col-md-6 l-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="02">0</span>+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="11">0</span>+</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="04">0</span>+</h2>
+                        <p>Awards Win</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="101">0</span>+</h2>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
             </div>
-            <div class="input">
-                <span>Requirement</span>
-                <textarea id="requirement"  name="" placeholder="enter your requirement" id="" cols="30" rows="10"required></textarea>
+        </div>
+    </section>
+    <!-- ====== //Fact Counter Section ====== -->
+
+    <!-- ====== Service Section ====== -->
+    <section id="service" class="section-padding pb-70 service-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Service</h2>
+                        <p>I will be your developer or designer. Let's begin!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <h2>Web Development</h2>
+                        <p>I will be your full stack developer with HTML,CSS,JavaScript,ReactJs,Bootstrap,PHP <br/> Laravel or Python to give best shape to your ideas and make you business paperless.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-area"></i>
+                        </div>
+                        <h2>Business Services</h2>
+                        <p>I can work as an employee in your company to reach out your company on best route and make your client connected.The best and reguler basis and  honest with your company.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <h2>Designer & Data Entry</h2>
+                        <p>I will be you designer to create the eye catchy flexes,cards,poster,and best UI.I can also work 
+                            with excell powerpoint and word with fast typing and professiency.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+            </div>
+
+        </div>
+    </section>
+    <!-- ====== //Service Section ====== -->
+
+    <!-- ====== Why choose Me Section ====== -->
+    <section id="" class="section-padding why-choose-us pb-70">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Why choose Me</h2>
+                        <p>Why You Need To Hire Me ?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Time Managment</h4>
+                        <p>I will complete your work the given time frame or before i will use the best project model to make it good.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Team Work</h4>
+                        <p>I can work better in team too i have the knowldge to participate in the project remotly.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Availability</h4>
+                        <p>I will available any time for you project or office time to turn your dreams and business to the peak of success.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-phone-volume"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Communication</h4>
+                        <p>I can speak Urdu Pashto English and Hindi to make it possible to communicate with different people .</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
             </div>
         </div>
-   <button type="submit" class="btn">Order Now</button>
-        <!-- <input type="submit" value="Order Now" class="btn" id="pro"> -->
+    </section>
+    <!-- ====== //Why choose Me Section ====== -->
 
-    </form>
-
-</section>
-
-<!-- order section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer" id="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>locations</h3>
-            <a href="#">pakistan</a>
-            <a href="#">japan</a>
-            <a href="#">russia</a>
-            <a href="#">USA</a>
-            <a href="#">france</a>
+    <!-- ====== Portfolio Section ====== -->
+    <section id="portfolio" class="section-padding pb-85 portfolio-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Recent Work</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row justify-content-center">
+                <!-- Work List Menu-->
+                <div class="col-lg-8">
+                    <div class="work-list text-center">
+                        <ul>
+                            <li class="filter" class="active" data-filter="all">ALL</li>
+                            <li class="filter" data-filter=".web">Web Design</li>
+                            <li class="filter" data-filter=".graphic">Graphic</li>
+                            <li class="filter" data-filter=".logo">Logo</li>
+                            <li class="filter" data-filter=".wp">Wordpress</li>
+                            <li class="filter" data-filter=".other">Other</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // Work List Menu -->
+            </div>
+            <div class="row portfolio">
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp graphic">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-1.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-1.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Ithange <span>Project</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo web graphic other wp">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-2.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-2.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Solo <span>Dev</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp other">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-3.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-3.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Flexispark <span>Uae</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo other graphic wp web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-4.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-4.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>CodeCap <span>Display</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo other wp graphic web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-5.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-5.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Span <span>ins</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp logo graphic web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-6.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-6.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover other">
+                            <h4>live <span>lack</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix web wp">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-7.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-7.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>ID <span>Card</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo graphic wp web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-8.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-8.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>single <span>Card</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix other logo web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-9.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-9.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Double <span>Cards</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+            </div>
         </div>
+    </section>
+    <!-- ====== // Portfolio Section ====== -->
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">contact us</a>
-            <a href="#">about-us</a>
-            
+    <!-- ====== Frequently asked questions ====== -->
+    <section class="section-padding faq-area bg-secondary">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center faq-title">
+                        <h2>Frequently asked questions</h2>
+                        <p>Mainly what questions to be ask about me ?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="faq-bg bg-img" style="background-image: url(assets/images/faq.jpeg)"></div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- FAQ Content -->
+                    <div class="faq-content" id="accordion">
+
+                        <!-- Single FAQ -->
+                        <div class="single-faq">
+
+                            <!-- FAQ Header -->
+                            <h4 class="collapsed" data-toggle="collapse" data-target="#faq-1">Which programming Langages i know?</h4>
+                            <!-- // FAQ Header -->
+
+                            <!-- FAQ Content -->
+                            <div id="faq-1" class="collapse show" data-parent="#accordion">
+                                <div class="faq-body">
+                                    provide a full range of web development services, including website design, front-end and back-end development, website maintenance, and optimization
+                                </div>
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                        <!-- Single FAQ -->
+                        <div class="single-faq">
+
+                            <!-- FAQ Header -->
+                            <h4 class="collapsed" data-toggle="collapse" data-target="#faq-2">What graphic design services are available?</h4>
+                            <!-- // FAQ Header -->
+
+                            <!-- FAQ Content -->
+                            <div id="faq-2" class="collapse" data-parent="#accordion">
+                                <div class="faq-body">
+                                    I offer graphic design services for various needs, including creating business cards, banners, flyers, and social media graphics.
+                                </div>
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                        <!-- Single FAQ -->
+                        <div class="single-faq">
+
+                            <!-- FAQ Header -->
+                            <h4 class="collapsed" data-toggle="collapse" data-target="#faq-3">Can you provide examples of your previous work?</h4>
+                            <!-- // FAQ Header -->
+
+                            <!-- FAQ Content -->
+                            <div id="faq-3" class="collapse" data-parent="#accordion">
+                                <div class="faq-body">
+                                    Yes, I can share a portfolio of my previous projects. This includes websites I’ve developed and graphic designs I’ve created.
+                                </div>
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                    </div>
+                    <!-- FAQ Content -->
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- ====== // Frequently asked questions ====== -->
 
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#">+923-444-872630</a>
-            <a href="#">+923-101-913012</a>
-            <a href="#">shakdabhan@gmail.com</a>
-            <a href="#">alpha@gmail.com</a>
-            <a href="#">mumbai, india - 400104</a>
+    <!-- ====== Blog Section ====== -->
+    <section class="section-padding pb-70 blog-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Hobbies Area</h2>
+                        <p>When I am free i am doing following work.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+                        <h4 class="blog-title"><a href="#">Hicking on Mountains</a></h4>
+                        <p class="blog-meta"><a href="#">Lower Dir</a>, 22 FEB 2018</p>
+                        <p>When I am free then i am trying to hicking because this give me different satisifiction and make me fresh to continue my coding journey.</p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/blog/img-2.jpg)"></div>
+                        <h4 class="blog-title"><a href="#">Watching Asthitic Reels</a></h4>
+                        <p class="blog-meta"><a href="#">FB,Twitter</a>, 22 FEB 2018</p>
+                        <p>Beside the hicking i am watcing asthatic and programming reels and mostly watching programming meems also.</p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(https://images.pexels.com/photos/7679441/pexels-photo-7679441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+                        <h4 class="blog-title"><a href="#">Working in plants</a></h4>
+                        <p class="blog-meta"><a href="#">Home</a>, 22 FEB 2018</p>
+                        <p>Beside from watching and hicking i am working in my home garden in my home to keep brought up the plants because i like greenery.</p>
+                        <a  href="#" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+            </div>
         </div>
+    </section>
+    <!-- ====== // Blog Section ====== -->
 
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">Github</a>
+
+    <!-- ====== Testimonial Section ====== -->
+    <section id="testimonial" class="section-padding bg-secondary testimonial-area">
+        <div class="container bg-white">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Testimonial</h2>
+                        <p>What my client Saying?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonials owl-carousel" data-ride="carousel">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Shadab transformed our outdated website into a modern, user-friendly platform. His attention to detail and dedication to meeting our needs were outstanding. Highly recommend his web development services!</p>
+                            <h4>Aseven M <span>CEO - aseven.info</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>The graphic designs Shadab created for our marketing campaign were top-notch. He perfectly captured our vision and delivered high-quality work on time. We’ll definitely be working with him again.</p>
+                            <h4>Jane Smith<span>Marketing Manager</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Shadab developed our startup's website from scratch and exceeded our expectations. His technical skills and creativity were evident throughout the project. Great communication and timely delivery!</p>
+                            <h4>Ahmed Ali<span>Startup Founder</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-    <div class="credit"> copyright @ 2023 by <span>Sahibazada Shadab Khan</span> </div>
-
-</section>
-<script>
-    function sendemail(){
-                let username=document.getElementById("name").value;
-                let email=document.getElementById("email").value;
-                let project=document.getElementById("project").value;
-                let days=document.getElementById("days").value;
-                let requirement=document.getElementById("requirement").value;
-                let date=document.getElementById("date").value;     
-    
-               
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "gamestunning06@gmail.com",
-    Password : "E0328A548C99364A75AF3D78FB4339F39443",
-    To : 'gamestunning06@gmail.com',
-    From : 'shakdabkhan@gmail.com',
-    Subject : "From Your Clint",
-    Body :  "Client name::::>>>" + username + "<br/> Client Email::::>>>"+email + "<br/> Client Order::::>>>" + project + "<br/> Required Days::::>>>"+ days  + "<br/> Requirement::::>>>"+requirement + "<br/> Submission_Date::::>>>"+ date 
-}).then(
-  message => alert("Thanks For Submitting Your Project")
-);
-    } 
-</script>
+    </section>
+    <!-- ====== // Testimonial Section ====== -->
+    <!-- ====== Call to Action Area ====== -->
+    <section class="section-padding call-to-action-aria bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2>How To Connect?</h2>
+                    <p>Ready to start your project? Contact me via email at shakdabkhan@gmail.com or call +923444872630. You can also reach out through LinkedIn. Let's bring your ideas to life!.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cta-button">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <a href="https://wa.me/923444872630" class="button">Drop Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Call to Action Area ====== -->
 
 
+   
+
+
+    <!-- ====== Contact Area ====== -->
+    <section id="contact" class="section-padding contact-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Contact Me</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Form -->
+                    <form id="contact-form"  class="contact-form bg-white" onsubmit="sendemail(); reset(); return false;">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input id="name" type="text" class="form-control" name="name" required placeholder="Name">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input id="email"  type="email" class="form-control" name="email" required placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input id="project"  type="text" class="form-control" name="subject" required placeholder="Project Title">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="requirement" class="form-control" required placeholder="Your Requirements/Message"></textarea>
+                        </div>
+                        <div class="form-btn text-center">
+                            <button class="button" type="submit">Send Message</button>
+                            <p class="form-message"></p>
+                        </div>
+                    </form>
+                    <!-- // Form -->
+                </div>
+            </div>
+            <!-- // Contact Form -->
+        </div>
+    </section>
+    <!-- ====== // Contact Area ====== -->
+
+
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p class="text-white">&copy; 2024 <a href="#">Design By Sahibazada Shadab Khan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== // Footer Area ====== -->
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer section ends -->
-
-<!-- loader part  -->
-<script>
-    let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-}
-
-let section = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .navbar a');
-
-window.onscroll = () =>{
-
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-
-  section.forEach(sec =>{
-
-    let top = window.scrollY;
-    let height = sec.offsetHeight;
-    let offset = sec.offsetTop - 150;
-    let id = sec.getAttribute('id');
-
-    if(top >= offset && top < offset + height){
-      navLinks.forEach(links =>{
-        links.classList.remove('active');
-        document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
-      });
-    };
-
-  });
-
-}
-
-document.querySelector('#search-icon').onclick = () =>{
-  document.querySelector('#search-form').classList.toggle('active');
-}
-
-document.querySelector('#close').onclick = () =>{
-  document.querySelector('#search-form').classList.remove('active');
-}
-
-var swiper = new Swiper(".home-slider", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop:true,
-});
-
-var swiper = new Swiper(".review-slider", {
-  spaceBetween: 20,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  loop:true,
-  breakpoints: {
-    0: {
-        slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
-}
-
-function fadeOut(){
-  setInterval(loader, 3000);
-}
-
-window.onload = fadeOut;
-</script>
-<!-- <script>
-    function Mail(){
-            
-            let name=document.getElementById("name").value;
-            let  project_name=document.getElementById(" project_name").value;
-            let email=document.getElementById("email").value;
-            let message=document.getElementById("messege").value;
-            let requirement=document.getElementById("requirement").value;
-            let date=document.getElementById("date").value;
-            let phone=document.getElementById("phone").value;
-            let order=document.getElementById("order").value;
-            let days=document.getElementById("days").value;
-          
-            let Additional_information =document.getElementById("Additional_information").value;
-            
+     <!-- ====== ALL JS ====== -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function sendemail(){
+                    let username=document.getElementById("name").value;
+                    let email=document.getElementById("email").value;
+                    let project=document.getElementById("project").value;
+                    let days=document.getElementById("days").value='2'
+                    let requirement=document.getElementById("requirement").value;
+                    let date=document.getElementById("date").value="2/22/2"     
+        
+                   
             Email.send({
-     Host : "smtp.elasticemail.com",
-     Username : "mastercomputer869@gmail.com",
-     Password : "94B8B447E5E88C9A4A890BD74C51CA533CE1",
-     To : 'mastercomputer869@gmail.com',
-     From : "shakdabkhan@gmail.com",
-     Subject : "Mail from your protfolio",
-     Body : "name:"+ name + "<br/>project_name :" + project_name + "<br/> User Email:" + email +"<br/> User Messege:" + message +"<br/> User Requirement:" +requirement + "<br/> Additional_information:" + Additional_information + "<br/> Phone_Number:" + phone +"<br/> Submission_Date:" + date 
-                       }).then(
-                          message => alert("Your Project Details Has Been Sent........")
-                      );
-
-    }
-</script> -->
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
+        Host : "smtp.elasticemail.com",
+        Username : "gamestunning06@gmail.com",
+        Password : "E0328A548C99364A75AF3D78FB4339F39443",
+        To : 'gamestunning06@gmail.com',
+        From : 'shakdabkhan@gmail.com',
+        Subject : "From Your Clint",
+        Body :  "Client name::::>>>" + username + "<br/> Client Email::::>>>"+email + "<br/> Client Order::::>>>" + project + "<br/> Required Days::::>>>"+ days  + "<br/> Requirement::::>>>"+requirement + "<br/> Submission_Date::::>>>"+ date 
+    }).then(
+      message => alert("Thanks For Submitting Your Project")
+    );
+        } 
+    </script>
 </body>
+
 </html>
